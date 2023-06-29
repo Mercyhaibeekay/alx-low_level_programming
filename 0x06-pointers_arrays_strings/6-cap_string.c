@@ -1,21 +1,39 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * puts2 - to print a string from the first char
- * @str: string variable
- * Return: void
+ * cap_string - it capitalizes most of the words in a string.
+ * @s: analized string.
+ *
+ * Return: String with all words capitalized.
  */
 
-void puts2(char *str)
+char *cap_string(char *s)
 {
-int i = 0;
-while (str[i] != '\0')
+int i, j;
+int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
+i = 0;
+while (*(s + i) != '\0')
 {
-if (i % 2 == 0)
+if (*(s + i) >= 'a' && *(s + i) <= 'z')
 {
-_putchar(str[i]);
+if (i == 0)
+{
+*(s + i) = *(s + i) - 32;
+}
+else
+{
+for (j = 0; j <= 12; j++)
+{
+if (a[j] == *(s + i - 1))
+{
+*(s + i) = *(s + i) - 32;
+}
+}
+}
 }
 i++;
 }
-_putchar('\n');
+return (s);
 }
