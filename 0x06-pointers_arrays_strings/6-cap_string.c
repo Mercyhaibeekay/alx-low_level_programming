@@ -5,10 +5,8 @@
 /**
  * cap_string - Capitalizes most of the words in a string.
  * @s: analized string.
- *
  * Return: String with all words capitalized.
  */
-
 
 char *cap_string(char *s)
 {
