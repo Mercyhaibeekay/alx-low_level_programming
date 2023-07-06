@@ -1,10 +1,12 @@
 #include "main.h"
 
+
 /**
- * rev_string - It reverse array
+ * rev_string - it reverse array
  * @n: integer params
  * Return: 0
  */
+
 
 void rev_string(char *n)
 {
@@ -23,6 +25,7 @@ temp = *(n + j);
 *(n + i) = temp;
 }
 }
+
 /**
  * infinite_add - Add 2 numbers together
  * @n1: text representation of 1st number to add
@@ -32,10 +35,12 @@ temp = *(n + j);
  * Return: pointer to calling function
  */
 
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int overflow = 0, i = 0, j = 0, digits = 0;
 int val1 = 0, val2 = 0, temp_tot = 0;
+
 while (*(n1 + i) != '\0')
 i++;
 while (*(n2 + j) != '\0')
