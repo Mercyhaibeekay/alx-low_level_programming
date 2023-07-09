@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  * puts2 - it prints a str, followed by a new line,
  * @str: pointer to the string to print
